@@ -1,0 +1,41 @@
+
+<a-scene
+  embedded
+  vr-mode-ui="enabled: false"
+  style="width: 100%; height: 100vh;"
+  renderer="antialias: true">
+
+  <!-- Imagen panoramica 360 -->
+  <a-sky
+    src="/aurora-360.jpg"
+    rotation="0 -90 0">
+  </a-sky>
+
+  <!-- Objeto 3D que contiene el nombre -->
+  <a-entity
+    id="nombre3d"
+    position="0 0 -4">
+
+    
+
+
+    <!-- Nombre completo en una sola linea -->
+    <a-text
+      value="GONZALO ANDRES RODRIGUEZ CORONEL"
+      align="center"
+      color="#FFD700"
+      width="6.5"
+      position="0 -0.1 0.14"
+      side="double">
+    </a-text>
+
+  </a-entity>
+
+  <!-- Camara 360 -->
+  <a-camera
+    position="0 0 0"
+    look-controls="enabled: true"
+    wasd-controls="enabled: false">
+  </a-camera>
+
+</a-scene>
